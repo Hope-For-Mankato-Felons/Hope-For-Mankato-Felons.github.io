@@ -11,44 +11,120 @@
             background-color: #f8f9fa;
             color: #333;
         }
+
+        /* Hero Section */
         .hero-section {
-            background-color: #343a40;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/random/1600x900?city') center/cover no-repeat;
             color: #fff;
-            padding: 60px 0;
+            padding: 80px 0;
             text-align: center;
         }
+
         .hero-section h1 {
-            font-size: 48px;
+            font-size: 54px;
             font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
         }
+
         .hero-section p {
-            font-size: 18px;
-            margin-top: 10px;
+            font-size: 20px;
+            margin-top: 20px;
         }
+
+        /* Content Section */
         .content-section {
-            padding: 40px 0;
+            padding: 60px 0;
         }
+
+        .content-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .content-section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
         .btn-facebook {
             background-color: #4267B2;
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 12px 30px;
+            border-radius: 50px;
             display: inline-block;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
         }
+
         .btn-facebook:hover {
             background-color: #365899;
         }
+
+        /* Resource Section */
+        .resource-section {
+            padding: 60px 0;
+        }
+
+        .resource-section h3 {
+            margin-bottom: 40px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 36px;
+            color: #007bff;
+        }
+
+        .resource-section .card {
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .resource-section .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .resource-section .card h4 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .resource-section .card p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .card-link {
+            color: #007bff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
         footer {
             background-color: #343a40;
             color: #fff;
             padding: 20px 0;
             text-align: center;
         }
-        .resource-section h3 {
-            margin-bottom: 30px;
-            font-weight: bold;
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
         }
+
     </style>
 </head>
 <body>
@@ -74,41 +150,53 @@
         </div>
     </section>
 
-    <section class="resource-section bg-light py-5">
+    <section class="resource-section bg-light">
         <div class="container">
-            <h3 class="text-center">Ways to Better Yourself</h3>
+            <h3>Ways to Better Yourself</h3>
             <div class="row">
                 <div class="col-md-4">
-                    <h4>Self-Discipline & Focus</h4>
-                    <p>Start each day with clear goals. Focus on developing positive habits and keeping yourself accountable. Over time, consistency is key to achieving your goals and overcoming your past mistakes.</p>
+                    <div class="card p-4 shadow-sm">
+                        <h4>Self-Discipline & Focus</h4>
+                        <p>Start each day with clear goals. Focus on developing positive habits and keeping yourself accountable. Over time, consistency is key to achieving your goals and overcoming your past mistakes.</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h4>Stay Physically Active</h4>
-                    <p>Staying healthy helps improve your mental clarity. Regular exercise reduces stress, boosts confidence, and improves self-esteem. A strong body leads to a strong mind, ready to face new challenges.</p>
+                    <div class="card p-4 shadow-sm">
+                        <h4>Stay Physically Active</h4>
+                        <p>Staying healthy helps improve your mental clarity. Regular exercise reduces stress, boosts confidence, and improves self-esteem. A strong body leads to a strong mind, ready to face new challenges.</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h4>Continuous Learning</h4>
-                    <p>Never stop learning. Whether it's coding, creative writing, or financial literacy, expanding your knowledge can open doors to new opportunities and a brighter future.</p>
+                    <div class="card p-4 shadow-sm">
+                        <h4>Continuous Learning</h4>
+                        <p>Never stop learning. Whether it's coding, creative writing, or financial literacy, expanding your knowledge can open doors to new opportunities and a brighter future.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="resource-section py-5">
+    <section class="resource-section">
         <div class="container">
-            <h3 class="text-center">Websites to Start Learning Coding</h3>
+            <h3>Websites to Start Learning Coding</h3>
             <div class="row">
                 <div class="col-md-4">
-                    <h4><a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a></h4>
-                    <p>FreeCodeCamp offers free coding tutorials and challenges to help you learn full-stack web development. It's a great starting point for anyone interested in coding.</p>
+                    <div class="card p-4 shadow-sm">
+                        <h4><a href="https://www.freecodecamp.org" class="card-link" target="_blank">FreeCodeCamp</a></h4>
+                        <p>FreeCodeCamp offers free coding tutorials and challenges to help you learn full-stack web development. It's a great starting point for anyone interested in coding.</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h4><a href="https://www.codecademy.com" target="_blank">Codecademy</a></h4>
-                    <p>Codecademy provides interactive lessons in various programming languages, making it easy for beginners to learn at their own pace.</p>
+                    <div class="card p-4 shadow-sm">
+                        <h4><a href="https://www.codecademy.com" class="card-link" target="_blank">Codecademy</a></h4>
+                        <p>Codecademy provides interactive lessons in various programming languages, making it easy for beginners to learn at their own pace.</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h4><a href="https://www.khanacademy.org/computing/computer-programming" target="_blank">Khan Academy</a></h4>
-                    <p>Khan Academy offers free courses in computer programming, algorithms, and more. Their step-by-step approach is perfect for learners of all levels.</p>
+                    <div class="card p-4 shadow-sm">
+                        <h4><a href="https://www.khanacademy.org/computing/computer-programming" class="card-link" target="_blank">Khan Academy</a></h4>
+                        <p>Khan Academy offers free courses in computer programming, algorithms, and more. Their step-by-step approach is perfect for learners of all levels.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -123,6 +211,4 @@
 </body>
 </html>
 
-</body>
-</html>
 
